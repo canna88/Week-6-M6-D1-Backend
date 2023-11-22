@@ -1,0 +1,19 @@
+{
+  "name": "week-6-m6-d1",
+  "version": "1.0.0",
+  "description": "Week-6-M6-D1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Alessio Canna",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1"
+  }
+}
