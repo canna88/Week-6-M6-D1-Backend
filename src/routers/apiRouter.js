@@ -1,10 +1,16 @@
 import express from "express";
-import authorRouter from "./authorRouter.js";
+import authorsRouter from "./authorsRouter.js";
+import blogPostsRouter from "./blogPostsRouter.js";
+import companiesRouter from "./companiesRouter.js";
+
 
 //Creazione router
 const apiRouter = express.Router();
 
-apiRouter.use("/author",authorRouter)
+apiRouter.use("/authors",authorsRouter)
+apiRouter.use("/blogposts", blogPostsRouter);
+apiRouter.use("/companies", companiesRouter);
+
 
 //Prime chiamate
 apiRouter.get("/", (req, res) => {
